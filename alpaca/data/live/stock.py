@@ -40,7 +40,7 @@ class StockDataStream(DataStream):
             ValueError: Only IEX or SIP market data feeds are supported
         """
         if feed not in (DataFeed.IEX, DataFeed.SIP):
-            raise ValueError("only IEX and SIP feeds ar supported")
+            raise ValueError("only IEX and SIP feeds are supported")
 
         super().__init__(
             endpoint=(
